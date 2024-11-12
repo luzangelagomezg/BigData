@@ -1,0 +1,2563 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="11/11/2024 3:24:16 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-2BBM0BFD"
+  DTS:CreatorName="LAPTOP-2BBM0BFD\luzan"
+  DTS:DTSID="{69BCB9B1-3607-4D0E-8ABA-0AFC976B5882}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LocaleID="9226"
+  DTS:ObjectName="SistemaIOT"
+  DTS:PackageType="5"
+  DTS:VersionBuild="20"
+  DTS:VersionGUID="{C2300418-288B-40C2-8014-C3DC7BEFC2D7}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{F67A04B8-9940-468E-87C1-20437966FFC5}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="9226"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\OneDrivePersonal\OneDrive\Escritorio\SEMESTRE 7\BIG DATA\ProyectoIoT\datos (3)\excel.csv.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CodigoEstacion"
+              DTS:DTSID="{F9350238-D8D0-495B-9561-561FF1469DB2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NombreEstacion"
+              DTS:DTSID="{BEA448C3-2EF9-4207-BE3E-E0947C5B8EA4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Latitud"
+              DTS:DTSID="{E62B7EB3-4146-49CB-8719-C009DCABEC95}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Longitud"
+              DTS:DTSID="{263BFC7A-10D4-4CEF-987F-14542074461A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Altitud"
+              DTS:DTSID="{8310973F-7300-42AA-A83E-3D562BA64EE9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Categoria"
+              DTS:DTSID="{FB74276F-3EF7-490F-80A3-411ACCDA2112}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Entidad"
+              DTS:DTSID="{0F0BF4AD-D56D-4963-B6DA-C308584365CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AreaOperativa"
+              DTS:DTSID="{C053CDE8-C06D-407C-9B36-9BCE5D7E6D11}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Departamento"
+              DTS:DTSID="{17CD39C4-F688-4552-8FBF-2E0781A1779E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Municipio"
+              DTS:DTSID="{4A5031BB-17A4-401E-BE3B-80EFD1B3B193}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FechaInstalacion"
+              DTS:DTSID="{CF3F2955-D46C-4D68-89B8-37420FC54EB3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FechaSuspension"
+              DTS:DTSID="{3661FE0F-A398-417C-9842-3323E8BFF776}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IdParametro"
+              DTS:DTSID="{BF1986D9-6C90-4AE8-8BF5-41A67117EE72}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Etiqueta"
+              DTS:DTSID="{1F993357-4B49-4CFF-A8DD-164446AE4527}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DescripcionSerie"
+              DTS:DTSID="{7D70B638-EA73-4AA0-A599-7E2D9BE86C7D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Frecuencia"
+              DTS:DTSID="{760ABB21-1C47-4063-A561-F89DE78038FF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fecha"
+              DTS:DTSID="{CEF453A7-0755-4F91-AB0F-BBE45D72811D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Valor"
+              DTS:DTSID="{16CA6F15-9FC9-4B32-9179-D40E93858245}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Grado"
+              DTS:DTSID="{F7B8D8DA-D91A-4ED9-8F63-48FAACB19133}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Calificador"
+              DTS:DTSID="{683E4956-C037-4377-A748-7E2CF1F434A2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NivelAprobacion"
+              DTS:DTSID="{1BB51063-E176-4E4D-98B3-166E2108631C}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-2BBM0BFD.Caracterizacion.sa]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{7A747100-D383-4E9E-B9D9-56B74F80E37B}"
+      DTS:ObjectName="LAPTOP-2BBM0BFD.Caracterizacion.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOP-2BBM0BFD;User ID=sa;Initial Catalog=Caracterizacion;Encrypt=False;Application Name=SSIS-SistemaIOT-{7A747100-D383-4E9E-B9D9-56B74F80E37B}LAPTOP-2BBM0BFD.Caracterizacion.sa;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsWpCune8f06uBXOTkkWSeQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADOI/sqe/PQFuLp6sooLonP03u5MxeUn9cHZPSKAZHHRAAAAAAOgAAAAAIAACAAAAC2Y8iR7jhGy3PSYo0HUN7F4kx+sf2dW/MixCwYUFOj7xAAAADUkbCADVrNS0mlVyTw1SMjQAAAAOWn39a0rNG59+xExQxZkO8KV8JESdfhCv2UQc4irViySRA/vgLHIDg+FCDFHKI8W7gn6iqviQ2AAgWRlsPzBzs</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-2BBM0BFD.Caracterizacion.sa 1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{8AE83540-A8EF-488F-8C78-66CB1F4E6102}"
+      DTS:ObjectName="LAPTOP-2BBM0BFD.Caracterizacion.sa 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOP-2BBM0BFD;User ID=sa;Initial Catalog=Caracterizacion;Encrypt=False;Application Name=SSIS-SistemaIOT-{8AE83540-A8EF-488F-8C78-66CB1F4E6102}LAPTOP-2BBM0BFD.Caracterizacion.sa 1;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsWpCune8f06uBXOTkkWSeQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADxcOjdSuGpKKzA6/DHceVsrWnenFssPO5OGdA1DYl7ewAAAAAOgAAAAAIAACAAAADg6TFllR4cIw4yUcRR42ad9e+YjXYsVhpNNwTRasQmZBAAAAB0mmFZxrRSWJy52m8T00svQAAAAHyCKsOdPcZAI4hLNMuDxxy0LJeZKMEz6ZBBPQtW9iQwbVFDZb/NV941i7kYybhae2AU0Ia/HSSN+akAgxL5H7s</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-2BBM0BFD.ProyectoFinalIOT.sa]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{84141D36-BF4C-4104-87F1-AB641FF77272}"
+      DTS:ObjectName="LAPTOP-2BBM0BFD.ProyectoFinalIOT.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOP-2BBM0BFD;User ID=sa;Initial Catalog=ProyectoFinalIOT;Application Name=SSIS-SistemaIOT-{84141D36-BF4C-4104-87F1-AB641FF77272}LAPTOP-2BBM0BFD.ProyectoFinalIOT.sa;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsWpCune8f06uBXOTkkWSeQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABuy6PZfArUrHadfANXZrhR2eTaewSgqUSTSAAX6OU38AAAAAAOgAAAAAIAACAAAAAO1e0FTEI3HD8vLU3XQrMULvkb7eML6wZi3lw1naBNWBAAAABwiI/MI5VMkhSpboLW8qqiQAAAALd6s3mSgoQpf5jbzpMdNu2vtCstjsj712Lz2+R99bGSJlmUSb+IzTxofQUIqH0km8kxuFkBXqXAlr4DlqC4gN4</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-2BBM0BFD.ProyectoFinalIOT.sa 1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{9087E49A-0A69-4923-99E1-C9A4542EF073}"
+      DTS:ObjectName="LAPTOP-2BBM0BFD.ProyectoFinalIOT.sa 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOP-2BBM0BFD;User ID=sa;Initial Catalog=ProyectoFinalIOT;Application Name=SSIS-SistemaIOT-{9087E49A-0A69-4923-99E1-C9A4542EF073}LAPTOP-2BBM0BFD.ProyectoFinalIOT.sa 1;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsWpCune8f06uBXOTkkWSeQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB8zMhpIFMywqTIYZ88s1fiP3PuDMXlgazeN0IP6PEg5gAAAAAOgAAAAAIAACAAAAArLX/cibugZt8Iwz919MGpGM+uddQ4brASkolmmvf7gRAAAADDt1nTN5/EM0STIgqRI4qnQAAAAOAqWBnf72a2Mi4RrXqKLRvejQAWTyMfrI3g7IRHocmIJflbmXrHGZ6fHG5glAyilozpZMn4Tcr4G91PGR4uFjs</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-2BBM0BFD.ProyectoFinalIOT.sa 2]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{5BED261C-DCB0-4316-9A35-204542535AAB}"
+      DTS:ObjectName="LAPTOP-2BBM0BFD.ProyectoFinalIOT.sa 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOP-2BBM0BFD;User ID=sa;Initial Catalog=ProyectoFinalIOT;Application Name=SSIS-SistemaIOT-{5BED261C-DCB0-4316-9A35-204542535AAB}LAPTOP-2BBM0BFD.ProyectoFinalIOT.sa 2;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsWpCune8f06uBXOTkkWSeQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACYoYfNWgtiXqHIHIV5pw5Ms2lF8RygpqNhom4Scwz6UwAAAAAOgAAAAAIAACAAAADG3g+pe9c6BMfZtAzTuEcmoVINo4KkIasgr3+h2dnfCxAAAAAs42TW+hu3RBTg/UN2rNxIQAAAAMnjAxE2w75qDOXa6gRxLZZOiplqGysY5tCe9Ugm2GKEPQ8tYJaGgu5U3lRyiHSFobbG0Ju41pbjPj6bEiz6rSo</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Datos Sensores"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{06668CEC-2D51-48D0-9ED4-00DD63AED463}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Datos Sensores"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Datos Sensores\Columna derivada"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Columna derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Crea nuevos valores de columna aplicando expresiones a las columnas de entrada de la transformación. Crea nuevas columnas o sobrescribe las columnas existentes. Por ejemplo, se concatenan los valores de las columnas 'nombre' y 'apellidos' para crear una columna 'nombre completo'."
+              name="Columna derivada"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Datos Sensores\Columna derivada.Inputs[Entrada de columna derivada]"
+                  description="Entrada en la transformación Columna derivada"
+                  name="Entrada de columna derivada">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Columna derivada.Inputs[Entrada de columna derivada].Columns[CodigoEstacion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CodigoEstacion"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CodigoEstacion]" />
+                    <inputColumn
+                      refId="Package\Datos Sensores\Columna derivada.Inputs[Entrada de columna derivada].Columns[Etiqueta]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Etiqueta"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Etiqueta]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Datos Sensores\Columna derivada.Outputs[Salida de columna derivada]"
+                  description="Salida predeterminada de la transformación Columna derivada"
+                  exclusionGroup="1"
+                  name="Salida de columna derivada"
+                  synchronousInputId="Package\Datos Sensores\Columna derivada.Inputs[Entrada de columna derivada]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Columna derivada.Outputs[Salida de columna derivada].Columns[IdSensor]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Cálculo"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Datos Sensores\Columna derivada.Outputs[Salida de columna derivada].Columns[IdSensor]"
+                      name="IdSensor"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión de columna derivada"
+                          name="Expression">(#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CodigoEstacion]} == "23085270" &amp;&amp; #{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Etiqueta]} == "HRA2_2_MEDIA_D") ? 1 : (#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CodigoEstacion]} == "23085270" &amp;&amp; #{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Etiqueta]} == "TMX_CON") ? 2 : (#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CodigoEstacion]} == "23085270" &amp;&amp; #{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Etiqueta]} == "PT_10_TT_D") ? 3 : (#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CodigoEstacion]} == "27015330" &amp;&amp; #{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Etiqueta]} == "HRA2_2_MEDIA_D") ? 4 : (#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CodigoEstacion]} == "27015330" &amp;&amp; #{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Etiqueta]} == "TMX_CON") ? 5 : (#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CodigoEstacion]} == "27015330" &amp;&amp; #{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Etiqueta]} == "PT_10_TT_D") ? 6 : 0</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión descriptiva de columna derivada"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(CodigoEstacion == "23085270" &amp;&amp; Etiqueta == "HRA2_2_MEDIA_D") ? 1 : (CodigoEstacion == "23085270" &amp;&amp; Etiqueta == "TMX_CON") ? 2 : (CodigoEstacion == "23085270" &amp;&amp; Etiqueta == "PT_10_TT_D") ? 3 : (CodigoEstacion == "27015330" &amp;&amp; Etiqueta == "HRA2_2_MEDIA_D") ? 4 : (CodigoEstacion == "27015330" &amp;&amp; Etiqueta == "TMX_CON") ? 5 : (CodigoEstacion == "27015330" &amp;&amp; Etiqueta == "PT_10_TT_D") ? 6 : 0</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Datos Sensores\Columna derivada.Outputs[Salida de error de columna derivada]"
+                  description="Salida de error de la transformación Columna derivada"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de columna derivada"
+                  synchronousInputId="Package\Datos Sensores\Columna derivada.Inputs[Entrada de columna derivada]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Datos Sensores\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Datos Sensores\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Datos Sensores\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Datos Sensores\Destino de ADO NET"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
+              name="Destino de ADO NET"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de destino."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."Registros"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifique el número de filas por lote. El valor predeterminado es 0, que utiliza el mismo tamaño que el búfer interno de SSIS. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si se debe usar la interfaz SqlBulkCopy para mejorar el rendimiento de las operaciones de inserción masiva. No todos los proveedores admiten esta interfaz."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Datos Sensores\Destino de ADO NET.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-2BBM0BFD.ProyectoFinalIOT.sa 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-2BBM0BFD.ProyectoFinalIOT.sa 2]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Datos Sensores\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]"
+                  errorRowDisposition="IgnoreFailure"
+                  hasSideEffects="true"
+                  name="Entrada de destino de ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Valor]"
+                      cachedDataType="i8"
+                      cachedName="Valor"
+                      externalMetadataColumnId="Package\Datos Sensores\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Valor]"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Valor]" />
+                    <inputColumn
+                      refId="Package\Datos Sensores\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[IdSensor]"
+                      cachedDataType="i4"
+                      cachedName="IdSensor"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Datos Sensores\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[IdSensor]"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[IdSensor]" />
+                    <inputColumn
+                      refId="Package\Datos Sensores\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Fecha]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Fecha"
+                      cachedSortKeyPosition="2"
+                      externalMetadataColumnId="Package\Datos Sensores\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[FechaCarga]"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Fecha]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[IdRegistro]"
+                      dataType="i4"
+                      name="IdRegistro" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[IdSensor]"
+                      dataType="i4"
+                      name="IdSensor" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Valor]"
+                      dataType="r8"
+                      name="Valor" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[FechaCarga]"
+                      dataType="dbTimeStamp"
+                      name="FechaCarga" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Datos Sensores\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de ADO NET"
+                  synchronousInputId="Package\Datos Sensores\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Datos Sensores\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Datos Sensores\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Datos Sensores\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Datos Sensores\Ordenar"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Ordenar;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Ordena los datos de entrada de manera ascendente o descendente cuando no es posible ordenarlos en su origen. Por ejemplo, se ordenan los datos de ventas por 'id. de cliente' antes de que se escriban en un archivo plano y se entreguen a otro departamento. Nota: no se recomienda realizar esta transformación para grandes flujos de datos."
+              name="Ordenar"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si la transformación Ordenar quita filas con valores de ordenación duplicados."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el número máximo de subprocesos que se deben usar para la ordenación."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación]"
+                  name="Entrada de ordenación">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[CodigoEstacion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CodigoEstacion"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CodigoEstacion]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[NombreEstacion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="NombreEstacion"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[NombreEstacion]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[Latitud]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Latitud"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Latitud]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[Longitud]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Longitud"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Longitud]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[Altitud]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Altitud"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Altitud]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[Categoria]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Categoria"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Categoria]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[Entidad]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="Entidad"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Entidad]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[AreaOperativa]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="AreaOperativa"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[AreaOperativa]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[Departamento]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Departamento"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Departamento]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[Municipio]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Municipio"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Municipio]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[FechaInstalacion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="FechaInstalacion"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[FechaInstalacion]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[FechaSuspension]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="FechaSuspension"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[FechaSuspension]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[IdParametro]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="IdParametro"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[IdParametro]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[Etiqueta]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Etiqueta"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Etiqueta]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[DescripcionSerie]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="DescripcionSerie"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DescripcionSerie]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[Frecuencia]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Frecuencia"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Frecuencia]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[Fecha]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Fecha"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[Valor]"
+                      cachedDataType="i8"
+                      cachedName="Valor"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Valor]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[Grado]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Grado"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Grado]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[Calificador]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Calificador"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Calificador]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[NivelAprobacion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="NivelAprobacion"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[NivelAprobacion]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación].Columns[IdSensor]"
+                      cachedDataType="i4"
+                      cachedName="IdSensor"
+                      lineageId="Package\Datos Sensores\Columna derivada.Outputs[Salida de columna derivada].Columns[IdSensor]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación]"
+                  isSorted="true"
+                  name="Salida de ordenación">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[CodigoEstacion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[CodigoEstacion]"
+                      name="CodigoEstacion">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CodigoEstacion]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[NombreEstacion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[NombreEstacion]"
+                      name="NombreEstacion">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[NombreEstacion]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Latitud]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Latitud]"
+                      name="Latitud">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Latitud]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Longitud]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Longitud]"
+                      name="Longitud">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Longitud]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Altitud]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Altitud]"
+                      name="Altitud">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Altitud]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Categoria]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Categoria]"
+                      name="Categoria">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Categoria]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Entidad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Entidad]"
+                      name="Entidad">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Entidad]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[AreaOperativa]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[AreaOperativa]"
+                      name="AreaOperativa">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[AreaOperativa]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Departamento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Departamento]"
+                      name="Departamento">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Departamento]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Municipio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Municipio]"
+                      name="Municipio">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Municipio]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[FechaInstalacion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[FechaInstalacion]"
+                      name="FechaInstalacion">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[FechaInstalacion]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[FechaSuspension]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[FechaSuspension]"
+                      name="FechaSuspension">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[FechaSuspension]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[IdParametro]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[IdParametro]"
+                      name="IdParametro">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[IdParametro]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Etiqueta]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Etiqueta]"
+                      name="Etiqueta">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Etiqueta]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[DescripcionSerie]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[DescripcionSerie]"
+                      name="DescripcionSerie">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DescripcionSerie]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Frecuencia]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Frecuencia]"
+                      name="Frecuencia">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Frecuencia]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Fecha]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Fecha]"
+                      name="Fecha"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Valor]"
+                      dataType="i8"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Valor]"
+                      name="Valor">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Valor]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Grado]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Grado]"
+                      name="Grado">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Grado]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Calificador]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[Calificador]"
+                      name="Calificador">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Calificador]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[NivelAprobacion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[NivelAprobacion]"
+                      name="NivelAprobacion">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[NivelAprobacion]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[IdSensor]"
+                      dataType="i4"
+                      lineageId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación].Columns[IdSensor]"
+                      name="IdSensor"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Datos Sensores\Columna derivada.Outputs[Salida de columna derivada].Columns[IdSensor]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Datos Sensores\Origen de archivo plano"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de archivo plano"
+              localeId="9226"
+              name="Origen de archivo plano"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si las columnas de longitud cero se tratan como NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Datos Sensores\Origen de archivo plano.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano]"
+                  name="Salida de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CodigoEstacion]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[CodigoEstacion]"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CodigoEstacion]"
+                      name="CodigoEstacion"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[NombreEstacion]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[NombreEstacion]"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[NombreEstacion]"
+                      name="NombreEstacion"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Latitud]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Latitud]"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Latitud]"
+                      name="Latitud"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Longitud]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Longitud]"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Longitud]"
+                      name="Longitud"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Altitud]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Altitud]"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Altitud]"
+                      name="Altitud"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Categoria]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Categoria]"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Categoria]"
+                      name="Categoria"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Entidad]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Entidad]"
+                      length="200"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Entidad]"
+                      name="Entidad"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[AreaOperativa]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[AreaOperativa]"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[AreaOperativa]"
+                      name="AreaOperativa"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Departamento]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Departamento]"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Departamento]"
+                      name="Departamento"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Municipio]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Municipio]"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Municipio]"
+                      name="Municipio"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[FechaInstalacion]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[FechaInstalacion]"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[FechaInstalacion]"
+                      name="FechaInstalacion"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[FechaSuspension]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[FechaSuspension]"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[FechaSuspension]"
+                      name="FechaSuspension"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[IdParametro]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[IdParametro]"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[IdParametro]"
+                      name="IdParametro"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Etiqueta]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Etiqueta]"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Etiqueta]"
+                      name="Etiqueta"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DescripcionSerie]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DescripcionSerie]"
+                      length="500"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DescripcionSerie]"
+                      name="DescripcionSerie"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Frecuencia]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Frecuencia]"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Frecuencia]"
+                      name="Frecuencia"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha]"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha]"
+                      name="Fecha"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Valor]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Valor]"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Valor]"
+                      name="Valor"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Grado]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Grado]"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Grado]"
+                      name="Grado"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Calificador]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Calificador]"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Calificador]"
+                      name="Calificador"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[NivelAprobacion]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[NivelAprobacion]"
+                      length="50"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[NivelAprobacion]"
+                      name="NivelAprobacion"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[CodigoEstacion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CodigoEstacion" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[NombreEstacion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="NombreEstacion" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Latitud]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Latitud" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Longitud]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Longitud" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Altitud]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Altitud" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Categoria]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Categoria" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Entidad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Entidad" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[AreaOperativa]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="AreaOperativa" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Departamento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Departamento" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Municipio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Municipio" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[FechaInstalacion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="FechaInstalacion" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[FechaSuspension]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="FechaSuspension" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[IdParametro]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="IdParametro" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Etiqueta]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Etiqueta" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DescripcionSerie]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DescripcionSerie" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Frecuencia]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Frecuencia" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fecha" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Valor]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Valor" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Grado]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Grado" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Calificador]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Calificador" />
+                    <externalMetadataColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[NivelAprobacion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="NivelAprobacion" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Columna de salida de error de origen de archivo plano"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      name="Columna de salida de error de origen de archivo plano" />
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Datos Sensores.Paths[Salida de columna derivada]"
+              endId="Package\Datos Sensores\Ordenar.Inputs[Entrada de ordenación]"
+              name="Salida de columna derivada"
+              startId="Package\Datos Sensores\Columna derivada.Outputs[Salida de columna derivada]" />
+            <path
+              refId="Package\Datos Sensores.Paths[Salida de ordenación]"
+              endId="Package\Datos Sensores\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]"
+              name="Salida de ordenación"
+              startId="Package\Datos Sensores\Ordenar.Outputs[Salida de ordenación]" />
+            <path
+              refId="Package\Datos Sensores.Paths[Salida de origen de archivo plano]"
+              endId="Package\Datos Sensores\Columna derivada.Inputs[Entrada de columna derivada]"
+              name="Salida de origen de archivo plano"
+              startId="Package\Datos Sensores\Origen de archivo plano.Outputs[Salida de origen de archivo plano]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Usuarios"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{0A5D2137-6B0D-41C2-83DB-D6DF343F3E91}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Usuarios"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Usuarios\IdUsuario y IdIndustria"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
+              name="IdUsuario y IdIndustria"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Especifica la instrucción SQL utilizada por el componente para extraer datos."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from Usuarios as u
+cross join [dbo].[SectorIndustrias] as i
+where u.UsuarioId IN  (41, 35)
+and  i.IndustriaId = 14</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si se debe permitir que columnas externas que no sean de cadenas se conviertan implícitamente en cadenas en las columnas de salida."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de origen."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especificar el modo de recuperar información de columnas externas"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Usuarios\IdUsuario y IdIndustria.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-2BBM0BFD.Caracterizacion.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-2BBM0BFD.Caracterizacion.sa]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET]"
+                  name="Salida de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[UsuarioId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].ExternalColumns[UsuarioId]"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[UsuarioId]"
+                      name="UsuarioId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[NombreUsuario]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].ExternalColumns[NombreUsuario]"
+                      length="50"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[NombreUsuario]"
+                      name="NombreUsuario"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[ApellidoUsuario]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].ExternalColumns[ApellidoUsuario]"
+                      length="50"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[ApellidoUsuario]"
+                      name="ApellidoUsuario"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[Identificacion]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].ExternalColumns[Identificacion]"
+                      length="50"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[Identificacion]"
+                      name="Identificacion"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[IdTipoIdentificacion]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].ExternalColumns[IdTipoIdentificacion]"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[IdTipoIdentificacion]"
+                      name="IdTipoIdentificacion"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[DemograficoId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].ExternalColumns[DemograficoId]"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[DemograficoId]"
+                      name="DemograficoId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[Edad]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].ExternalColumns[Edad]"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[Edad]"
+                      name="Edad"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[IndustriaId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].ExternalColumns[IndustriaId]"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[IndustriaId]"
+                      name="IndustriaId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[Industria]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].ExternalColumns[Industria]"
+                      length="50"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[Industria]"
+                      name="Industria"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[Descripcion]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].ExternalColumns[Descripcion]"
+                      length="500"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[Descripcion]"
+                      name="Descripcion"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].ExternalColumns[UsuarioId]"
+                      dataType="i4"
+                      name="UsuarioId" />
+                    <externalMetadataColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].ExternalColumns[NombreUsuario]"
+                      dataType="wstr"
+                      length="50"
+                      name="NombreUsuario" />
+                    <externalMetadataColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].ExternalColumns[ApellidoUsuario]"
+                      dataType="wstr"
+                      length="50"
+                      name="ApellidoUsuario" />
+                    <externalMetadataColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].ExternalColumns[Identificacion]"
+                      dataType="wstr"
+                      length="50"
+                      name="Identificacion" />
+                    <externalMetadataColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].ExternalColumns[IdTipoIdentificacion]"
+                      dataType="i4"
+                      name="IdTipoIdentificacion" />
+                    <externalMetadataColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].ExternalColumns[DemograficoId]"
+                      dataType="i4"
+                      name="DemograficoId" />
+                    <externalMetadataColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].ExternalColumns[Edad]"
+                      dataType="i4"
+                      name="Edad" />
+                    <externalMetadataColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].ExternalColumns[IndustriaId]"
+                      dataType="i4"
+                      name="IndustriaId" />
+                    <externalMetadataColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].ExternalColumns[Industria]"
+                      dataType="wstr"
+                      length="50"
+                      name="Industria" />
+                    <externalMetadataColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].ExternalColumns[Descripcion]"
+                      dataType="wstr"
+                      length="500"
+                      name="Descripcion" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[UsuarioId]"
+                      dataType="i4"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[UsuarioId]"
+                      name="UsuarioId" />
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[NombreUsuario]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[NombreUsuario]"
+                      name="NombreUsuario" />
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[ApellidoUsuario]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[ApellidoUsuario]"
+                      name="ApellidoUsuario" />
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[Identificacion]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[Identificacion]"
+                      name="Identificacion" />
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[IdTipoIdentificacion]"
+                      dataType="i4"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[IdTipoIdentificacion]"
+                      name="IdTipoIdentificacion" />
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[DemograficoId]"
+                      dataType="i4"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[DemograficoId]"
+                      name="DemograficoId" />
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[Edad]"
+                      dataType="i4"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[Edad]"
+                      name="Edad" />
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[IndustriaId]"
+                      dataType="i4"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[IndustriaId]"
+                      name="IndustriaId" />
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[Industria]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[Industria]"
+                      name="Industria" />
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[Descripcion]"
+                      dataType="wstr"
+                      length="500"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[Descripcion]"
+                      name="Descripcion" />
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Usuarios\Usuarios BD IOT"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
+              name="Usuarios BD IOT"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de destino."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."Usuarios"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifique el número de filas por lote. El valor predeterminado es 0, que utiliza el mismo tamaño que el búfer interno de SSIS. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si se debe usar la interfaz SqlBulkCopy para mejorar el rendimiento de las operaciones de inserción masiva. No todos los proveedores admiten esta interfaz."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Usuarios\Usuarios BD IOT.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-2BBM0BFD.ProyectoFinalIOT.sa 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-2BBM0BFD.ProyectoFinalIOT.sa 1]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Usuarios\Usuarios BD IOT.Inputs[Entrada de destino de ADO NET]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Usuarios\Usuarios BD IOT.Inputs[Entrada de destino de ADO NET].Columns[UsuarioId]"
+                      cachedDataType="i4"
+                      cachedName="UsuarioId"
+                      externalMetadataColumnId="Package\Usuarios\Usuarios BD IOT.Inputs[Entrada de destino de ADO NET].ExternalColumns[IdUsuario]"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[UsuarioId]" />
+                    <inputColumn
+                      refId="Package\Usuarios\Usuarios BD IOT.Inputs[Entrada de destino de ADO NET].Columns[IndustriaId]"
+                      cachedDataType="i4"
+                      cachedName="IndustriaId"
+                      externalMetadataColumnId="Package\Usuarios\Usuarios BD IOT.Inputs[Entrada de destino de ADO NET].ExternalColumns[IdIndustria]"
+                      lineageId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET].Columns[IndustriaId]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Usuarios\Usuarios BD IOT.Inputs[Entrada de destino de ADO NET].ExternalColumns[IdUsuario]"
+                      dataType="i4"
+                      name="IdUsuario" />
+                    <externalMetadataColumn
+                      refId="Package\Usuarios\Usuarios BD IOT.Inputs[Entrada de destino de ADO NET].ExternalColumns[IdIndustria]"
+                      dataType="i4"
+                      name="IdIndustria" />
+                    <externalMetadataColumn
+                      refId="Package\Usuarios\Usuarios BD IOT.Inputs[Entrada de destino de ADO NET].ExternalColumns[Fecha]"
+                      dataType="dbTimeStamp"
+                      name="Fecha" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Usuarios\Usuarios BD IOT.Outputs[Salida de error de destino de ADO NET]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de ADO NET"
+                  synchronousInputId="Package\Usuarios\Usuarios BD IOT.Inputs[Entrada de destino de ADO NET]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Usuarios\Usuarios BD IOT.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Usuarios\Usuarios BD IOT.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Usuarios\Usuarios BD IOT.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Usuarios\Usuarios BD IOT.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Usuarios.Paths[Salida de origen de ADO NET]"
+              endId="Package\Usuarios\Usuarios BD IOT.Inputs[Entrada de destino de ADO NET]"
+              name="Salida de origen de ADO NET"
+              startId="Package\Usuarios\IdUsuario y IdIndustria.Outputs[Salida de origen de ADO NET]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="122,42"
+          Id="Package\Usuarios"
+          TopLeft="251,49" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Datos Sensores"
+          TopLeft="229,112" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Usuarios">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="189,42"
+          Id="Package\Usuarios\IdUsuario y IdIndustria"
+          TopLeft="82,27" />
+        <NodeLayout
+          Size="162,42"
+          Id="Package\Usuarios\Usuarios BD IOT"
+          TopLeft="364,31" />
+        <EdgeLayout
+          Id="Package\Usuarios.Paths[Salida de origen de ADO NET]"
+          TopLeft="271,50">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="93,0"
+              Start="0,0"
+              End="85.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="85.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Usuarios\IdUsuario y IdIndustria">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Usuarios\Usuarios BD IOT">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Datos Sensores">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="183,42"
+          Id="Package\Datos Sensores\Destino de ADO NET"
+          TopLeft="367,22" />
+        <NodeLayout
+          Size="196,42"
+          Id="Package\Datos Sensores\Origen de archivo plano"
+          TopLeft="81,24" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Datos Sensores\Columna derivada"
+          TopLeft="99,119" />
+        <EdgeLayout
+          Id="Package\Datos Sensores.Paths[Salida de origen de archivo plano]"
+          TopLeft="181,66">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,53"
+              Start="0,0"
+              End="0,45.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="119,42"
+          Id="Package\Datos Sensores\Ordenar"
+          TopLeft="375,142" />
+        <EdgeLayout
+          Id="Package\Datos Sensores.Paths[Salida de columna derivada]"
+          TopLeft="267,140">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="108,23"
+              Start="0,0"
+              End="100.5,23">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="50,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="50,0"
+                    Point2="54,0"
+                    Point3="54,4" />
+                  <mssgle:LineSegment
+                    End="54,19" />
+                  <mssgle:CubicBezierSegment
+                    Point1="54,19"
+                    Point2="54,23"
+                    Point3="58,23" />
+                  <mssgle:LineSegment
+                    End="100.5,23" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Datos Sensores.Paths[Salida de ordenación]"
+          TopLeft="434.5,142">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="24,-78"
+              Start="0,0"
+              End="24,-70.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-35" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-35"
+                    Point2="0,-39"
+                    Point3="4,-39" />
+                  <mssgle:LineSegment
+                    End="20,-39" />
+                  <mssgle:CubicBezierSegment
+                    Point1="20,-39"
+                    Point2="24,-39"
+                    Point3="24,-43" />
+                  <mssgle:LineSegment
+                    End="24,-70.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Datos Sensores\Destino de ADO NET">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
